@@ -5,7 +5,7 @@ FactoryBot.define do
     association :room
 
     after(:build) do |message|
-      message.image.attach(io: File.open('public/images/test.png'), filename: 'test.png')
+      message.image.attach(io: File.open('public/images/test_image.png'), filename: 'test.png')
     end
 
   end
